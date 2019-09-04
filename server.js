@@ -1,8 +1,9 @@
+require('dotenv').config()
 const express = require('express')
+const { appConfig } = require('./config') //destructuring
+
 
 const app = express()
-const port = 8080
 
-app.listen(port, () => {
-    console.log(`listen on ${port}`)
-})
+
+app.listen(appConfig.port, () => console.log(`listen on ${appConfig.port}`))
