@@ -1,11 +1,11 @@
 require('dotenv').config()
-const express = require('express')
+const app = require('./app')
 const connectDb = require('./db/mongodb')
 const { appConfig, dbConfig } = require('./config') //destructuring
 
 
-const app = express()
-    //se controla si hay un error en la bd
+
+//se controla si hay un error en la bd
 async function initApp(appConfig, dbConfig) {
 
     try {

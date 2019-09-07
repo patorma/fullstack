@@ -10,7 +10,7 @@ const ProductSchema = Schema({
     imgUrl: String,
     description
 }, {
-    //esto permite que nuestras colecciones se le agregue por deafaul una proipiedad createAt
+    //esto permite que nuestras colecciones se le agregue por default una proipiedad createAt
     //para mostrar cuando se creo y cuando se modifico
     timestamps: true
 })
