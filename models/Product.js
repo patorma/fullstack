@@ -8,9 +8,9 @@ const ProductSchema = Schema({
     size: Number, //cantidad
     unitaryPrice: Number,
     imgUrl: String,
-    description
+    description: String
 }, {
-    //esto permite que nuestras colecciones se le agregue por default una proipiedad createAt
+    //esto permite que nuestras colecciones se le agregue por default una propiedad createAt
     //para mostrar cuando se creo y cuando se modifico
     timestamps: true
 })
